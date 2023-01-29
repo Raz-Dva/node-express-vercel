@@ -4,7 +4,8 @@ const fs = require('fs');
 
 router.get('/', async (req, res, next) => {
 
-  fs.readFile('.src/company-info.json', (err, data) => {
+  fs.readFile(process.cwd()+'src/company-info.json', (err, data) => {
+    console.log(process.cwd(), ' +++process.cwd()')
     if (err) {
       let message = 'Error from server.'
       if (err.errno) {

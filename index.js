@@ -8,4 +8,5 @@ app.use(express.json());
 app.use('/info', companyInfo);
 
 const port = process.env.PORT || 9001;
-app.listen(port, () => console.log(`Listening to port ${port}`));
+app.listen(port, () => console.log(`Listening to port ${port}     --- ${process.cwd()} +++process.cwd()')
+`));
