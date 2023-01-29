@@ -8,6 +8,7 @@
   },
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,5 +17,8 @@
   "dependencies": {
     "express": "^4.17.3",
     "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5"
   }
 }
