@@ -1,10 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const fs = require('fs');
+const clientPath = process.cwd();
 
 router.get('/', async (req, res, next) => {
 
-  fs.readFile(process.cwd()+'src/company-info.json', (err, data) => {
+  fs.readFile(`${clientPath}/src/company-info.json`, (err, data) => {
     console.log(process.cwd(), ' +++process.cwd()')
     if (err) {
       let message = 'Error from server.'
